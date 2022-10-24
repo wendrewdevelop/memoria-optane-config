@@ -18,31 +18,31 @@ Guide to configure optane memory on Ubuntu.
 11. Para finalizar, veja se deu certo com o comando a seguir: sudo lvdisplay /dev/ubuntu-vg/root
 
 O resultado deve ser algo do tipo:
-
---- Logical volume ---
-  LV Path                /dev/vgubuntu/root
-  LV Name                root
-  VG Name                vgubuntu
-  LV UUID                NgELaU-hPqx-UcpE-mj80-LOPX-Pn5n-b96cJY
-  LV Write Access        read/write
-  LV Creation host, time ubuntu, 2022-06-13 22:23:34 -0300
-  LV Cache pool name     root_cachepool_cpool
-  LV Cache origin name   root_corig
-  LV Status              available
-  # open                 1
-  LV Size                930,05 GiB
-  Cache used blocks      8,57%
-  Cache metadata blocks  10,91%
-  Cache dirty blocks     0,44%
-  Cache read hits/misses 2008 / 12007
-  Cache wrt hits/misses  8239 / 12631
-  Cache demotions        0
-  Cache promotions       18785
-  Current LE             238094
-  Segments               1
-  Allocation             inherit
-  Read ahead sectors     auto
-  - currently set to     256
-  Block device           253:0
-
+<br>
+### --- Logical volume --- <br>
+  LV Path                /dev/vgubuntu/root <br>
+  LV Name                root <br>
+  VG Name                vgubuntu <br>
+  LV UUID                NgELaU-hPqx-UcpE-mj80-LOPX-Pn5n-b96cJY <br>
+  LV Write Access        read/write <br>
+  LV Creation host, time ubuntu, 2022-06-13 22:23:34 -0300 <br>
+  LV Cache pool name     root_cachepool_cpool <br>
+  LV Cache origin name   root_corig <br>
+  LV Status              available <br>
+  - open                 1 <br>
+  LV Size                930,05 GiB <br>
+  Cache used blocks      8,57% <br>
+  Cache metadata blocks  10,91% <br>
+  Cache dirty blocks     0,44% <br>
+  Cache read hits/misses 2008 / 12007 <br>
+  Cache wrt hits/misses  8239 / 12631 <br>
+  Cache demotions        0 <br>
+  Cache promotions       18785 <br>
+  Current LE             238094 <br>
+  Segments               1 <br>
+  Allocation             inherit <br>
+  Read ahead sectors     auto <br> 
+  - currently set to     256 <br>
+  Block device           253:0 <br>
+<br>
 Os blocos de Cache devem estar listados no retorno do comando.
