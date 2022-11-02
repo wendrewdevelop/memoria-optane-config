@@ -11,9 +11,9 @@ Guide to configure optane memory on Ubuntu.
 7. Em seguida, execute o comando: sudo apt install thin-provisioning-tools
 8. Após isso, baixe o item nesse link: https://opvizor-perfanalyzer.s3-eu-west-1.amazonaws.com/thin-provisioning-tools
 9. Na sequencia execute essa lista de comandos, na ordem:
-	sudo chown root:root ~/Downloads/thin-provisioning-tools
-	sudo chmod 0755 ~/Downloads/thin-provisioning-tools
-	sudo mv ~/Downloads/thin-provisioning-tools /usr/share/initramfs-tools/hooks/
+	- sudo chown root:root ~/Downloads/thin-provisioning-tools
+	- sudo chmod 0755 ~/Downloads/thin-provisioning-tools
+	- sudo mv ~/Downloads/thin-provisioning-tools /usr/share/initramfs-tools/hooks/
 10. Após isso, execute o comando: sudo update-initramfs -k all -u
 11. Para finalizar, veja se deu certo com o comando a seguir: sudo lvdisplay /dev/ubuntu-vg/root
 
